@@ -1,3 +1,9 @@
-# Docebo Connector - AUTH_AND_CREDENTIALS.md
+# Docebo Connector — Auth & Credentials Standard
 
-Standard documentation for Docebo Connector in Imperal Cloud.
+**Compliance:** AUTH_AND_CREDENTIALS_STANDARD.md (B1–B10)
+
+## Схема аутентификации
+- **Метод:** OAuth 2.0 Bearer Token (Authorization Code / Client Credentials)
+- **Хранение:** Секреты сохраняются изолированно в хранилище секретов платформы Imperal.
+- **Валидация:** При сохранении ключа выполняется тестовый запрос `GET /learn/v1/courses`.
+- **Отключение:** Удаление локальных ключей без воздействия на аккаунт вендора.
