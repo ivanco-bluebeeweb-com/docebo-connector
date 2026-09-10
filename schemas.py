@@ -10,7 +10,7 @@ class NoParams(BaseModel):
 class ConnectParams(BaseModel):
     label: str = Field(default="", description="Friendly connection label, e.g. Primary Docebo.")
     api_key: str = Field(description="LMS API Key / Access Token")
-    base_url: str = Field(default="https://learn.docebo.com/learn/v1", description="Docebo API base URL.")
+    base_url: str = Field(default="https://your-domain.docebosaas.com/learn/v1", description="Docebo API base URL (e.g. https://your-domain.docebosaas.com/learn/v1).")
 
 class ConnectionIdParams(BaseModel):
     connection_id: str = Field(default="", description="Connection identifier (empty uses active connection).")
